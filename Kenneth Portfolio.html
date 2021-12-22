@@ -16,12 +16,16 @@
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
+    <!-- Chart JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
+
   </head>
   <body>
     <!-- header section starts  -->
 
     <header>
-      <a href="#" class="logo"><img src="/Img/image (3).png" alt="Logo" /></a>
+      <a href="#home" class="logo"><img src="/Img/image (3).png" alt="Logo" /></a>
 
       <nav class="navbar">
         <ul>
@@ -46,7 +50,7 @@
         <h1 class="banner">Kenn<span>eth</span> Zambrano</h1>
         <h3 class="slogan">Solidity Developer</h3>
 
-        <a href="#"><button class="btn">Contact me</button></a>
+        <a href="#"><button class="btn">See more</button></a>
       </div>
 
       <div class="wave wave1"></div>
@@ -64,50 +68,99 @@
     <!-- home section ends -->
 
     <!-- About section start -->
+<div class="all-background">
+
 
     <section id="about" class="about">
-      <svg viewBox="0 0 3850 600">
-        <text x="8%" y="90%" fill="transparent" text-anchor="middle">
-          Profile
-        </text>
-      </svg>
-      <div data-aos="fade-down" data-aos-duration="1000" class="box-container">
-        <div class="box">
-          <div class="user">
-            <img src="/Img/kennethcircleColor.png" alt="Kenneth-face" />
-            <div class="info">
-              <h3>Kenneth Zambrano</h3>
-              <div class="language">
-                <i class="fas fa-language"></i>
-                <div class="flags">
-                  <img src="/Img/Spain-iconnnn.png" alt="Spain" />
-                  <img src="/Img/United-Kingdom-iconnnn.png" alt="United" />
-                  <img src="/Img/Japan-iconnnn.png" alt="Japan" />
-                </div>
-              </div>
+     <!-- <h1 class="heading"><span>Profile</span></h1> -->
+     <div class="information">
+      <div class="image">
+        <img src="/Img/kennethcircleColor.png" alt="Kenneth">
+      </div>
+       <div class="about-content">
+         <h1>Kenn<span>eth</span> Zambrano</h1>
+         <p>Start programming when discovered bitcoin and blockchain technology in 2015. I'm constantly developing my skills and knowledge on the blockchain area. Currently helping at <a class="first-link" target="_blank" href="https://moralis.io">Moralis Academy</a> in the Forum about blockchain programming, Dapps and courses.</p>
+         <div class="languages">
+           <img src="Img/Spain-iconnnn.png" alt="Spanish">
+           <img src="Img/United-Kingdom-iconnnn.png" alt="English">
+            <img src="Img/Japan-iconnnn.png" alt="Japanese">
+
+         </div>
+       </div>
+      
+     </div>
+
+    <!-- Proyects section-->
+
+    <section id="proyects" class="proyects-sections">
+      <h1 class="heading"><span>Proyects</span></h1>
+
+      <div class="box-container">
+        <!-- AOS animation ready to set -->
+        <!-- data-aos="fade-down" data-aos-duration="1000" -->
+        
+          <div class="box-shadow">
+            <div class="box-proyect card1">
+              <h3><span>NFT</span> game like <span>Crypto-kitties</span></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                fuga?tetur adipisicing elit. Quis, fuga?tetur adipisicing elit.
+                Quis, fuga?
+              </p>
+              <a href="#"><button class="btn">See more</button></a>
+              <img src="/Img/Dapp.png" class="kittie-img" alt="Kitties" />
+            </div>
+          
+        </div>
+ <!-- AOS animation ready to set -->
+ <!-- data-aos="fade-down" data-aos-duration="1200" -->
+        
+          <div class="box-shadow">
+            <div class="box-proyect card2">
+              <h3><span>Solidity</span> Betting Dice <span>Dapp</span></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                fuga?tetur adipisicing elit. Quis, fuga?tetur adipisicing elit.
+                Quis, fuga?
+              </p>
+              <a href="#"><button class="btn">See more</button></a>
+              <img src="/Img/box.png" class="kittie-img" alt="Kitties" />
             </div>
           </div>
-          <p>
-            Start programming when discovered bitcoin and blockchain technology
-            in 2015. I'm constantly developing my skills and knowledge on the
-            blockchain area. Currently helping at Moralis Academy in the Forum
-            about blockchain programming, Dapps and courses.
-          </p>
+       
+ <!-- AOS animation ready to set -->
+ <!-- data-aos="fade-down" data-aos-duration="1400"  -->
+       
+          <div class="box-shadow">
+            <div class="box-proyect card3">
+              <h3>
+                <span>Solidity</span> Multisig <span>Wallet</span> manager
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                fuga?tetur adipisicing elit. Quis, fuga?tetur adipisicing elit.
+                Quis, fuga?
+              </p>
+              <a href="#" class="btn"><button class="btn">See more</button></a>
+              <img
+                src="/Img/Multisignnnn.png"
+                alt="Multisig wallet"
+              />
+            </div>
+         
         </div>
       </div>
+    </section>
+
 
       <!-- Education -->
       <div class="education-section">
-        <svg viewBox="0 0 6950 600">
-          <text x="10%" y="90%" fill="transparent" text-anchor="middle">
-            Education
-          </text>
-        </svg>
+        <h1 class="heading education-heading"><span>Education</span></h1>
         <div class="content-text">
-          <div class="contentt">
+          <div class="contentt btc-content">
             <h1>
-              <span>Blockchain</span> and <span>Bitcoin 101</span>
               <i class="fab fa-bitcoin"></i>
+              <span>Blockchain</span> and <span>Bitcoin 101</span>
             </h1>
             <p>
               <i class="far fa-dot-circle"></i> Complete Blockchain and Bitcoin
@@ -126,8 +179,9 @@
             </div>
           </div>
 
-          <div class="contentt">
-            <h1><span>Ethereum 101</span> <i class="fab fa-ethereum"></i></h1>
+          <div class="contentt eth-content">
+            
+            <h1><i class="fab fa-ethereum"></i> <span>Ethereum 101</span></h1>
             <p>
               <i class="far fa-dot-circle"></i> Complete Ethereum fundamentals
               theoretical course.
@@ -145,11 +199,11 @@
             </div>
           </div>
 
-          <div class="contentt">
+          <div class="contentt file-content">
             <h1>
+              <i class="fas fa-file-contract"></i>
               <span>Ethereum Smart Contract</span> Programming
               <span>101</span> and <span>201</span>
-              <i class="fas fa-file-contract"></i>
             </h1>
             <p>
               <i class="far fa-dot-circle"></i> Complete Solidity courses with
@@ -174,10 +228,10 @@
             </div>
           </div>
 
-          <div class="contentt">
+          <div class="contentt spinner-content">
             <h1>
+               <i class="fas fa-spinner"></i>
               <span>Ethereum Dapp</span> Programming
-              <i class="fas fa-spinner"></i>
             </h1>
             <p>
               <i class="far fa-dot-circle"></i> Full Dapp from scratch about
@@ -198,135 +252,319 @@
       </div>
     </section>
 
-    <!-- Proyects section-->
+  </div>
 
-    <section id="proyects" class="proyects-sections">
-      <svg viewBox="0 0 6950 600">
-        <text x="50%" y="90%" fill="transparent" text-anchor="middle">
-          Proyects
-        </text>
-      </svg>
-
-      <div class="box-container">
-        <!-- AOS animation ready to set -->
-        <!-- data-aos="fade-down" data-aos-duration="1000" -->
-        <div class="single-container">
-          <div class="box-shadow">
-            <div class="box-proyect card1">
-              <h3><span>NFT</span> game like <span>Crypto-kitties</span></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                fuga?tetur adipisicing elit. Quis, fuga?tetur adipisicing elit.
-                Quis, fuga?
-              </p>
-              <a href="#"><button class="btn">See more</button></a>
-              <img src="/Img/Dapp.png" class="kittie-img" alt="Kitties" />
-            </div>
-          </div>
-        </div>
- <!-- AOS animation ready to set -->
- <!-- data-aos="fade-down" data-aos-duration="1200" -->
-        <div class="single-container">
-          <div class="box-shadow">
-            <div class="box-proyect card2">
-              <h3><span>Solidity</span> Betting Dice <span>Dapp</span></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                fuga?tetur adipisicing elit. Quis, fuga?tetur adipisicing elit.
-                Quis, fuga?
-              </p>
-              <a href="#"><button class="btn">See more</button></a>
-              <img src="/Img/box.png" class="kittie-img" alt="Kitties" />
-            </div>
-          </div>
-        </div>
- <!-- AOS animation ready to set -->
- <!-- data-aos="fade-down" data-aos-duration="1400"  -->
-        <div class="single-container">
-          <div class="box-shadow">
-            <div class="box-proyect card3">
-              <h3>
-                <span>Solidity</span> Multisig <span>Wallet</span> manager
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                fuga?tetur adipisicing elit. Quis, fuga?tetur adipisicing elit.
-                Quis, fuga?
-              </p>
-              <a href="#" class="btn"><button class="btn">See more</button></a>
-              <img
-                src="/Img/Removal-353.png"
-                class="multisig-wallet"
-                alt="Multisig wallet"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 
     <!-- Skillset -->
 
     <section class="skillset-section">
-      <svg viewBox="0 0 6950 600">
-        <text x="50%" y="90%" fill="transparent" text-anchor="middle">
-          Skillset
-        </text>
-      </svg>
+      <h1 class="heading"><span>Skillset</span></h1>
 
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <h1><span>Ethereum</span> <i class="fab fa-ethereum"></i></h1>
-            <p>Solidity</p>
-            <p>Truffle</p>
-            <p>HardHat</p>
-            <p>Ganache CLI</p>
-            <p>Web3.js</p>
-            <p>Metamask</p>
-            <p>Moralis</p>
+<div class="all-cards-container">
+
+   <div class="card-skill" data-aos="fade-right" data-aos-duration="1900">
+    <div class="bubble-skill">
+
+      <div class="menu">
+        <div class="toggle"><i class="fab fa-ethereum"></i></div>
+  
+          <li style="--i:1;">
+  
+            <div class="content-buble">
+              <div class="info">
+                 <p class="hidding">Truffle</p>
+              </div>
+              <div class="imageee">
+            <a href="https://trufflesuite.com" target="_blank"><img src="/Img/Truffle-removebg-preview.png" alt="Truffle"></a>
           </div>
-          <div class="swiper-slide">
-            <h1 class="develp"><span>Development</span> <i class="fas fa-window-restore"></i></h1>
-            <p>PHP</p>
-            <p>Mysql Database</p>
-            <p>Javascript</p>
-            <p>React JS</p>
-            <p>Svelte</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Assertions</p>
-            <p>Testing</p>
-            <p>Package</p>
+            </div>
+    </li>
+  
+            <li style="--i:2;">
+              <div class="content-buble">
+                <div class="info">
+                   <p class="hidding">HardHat</p>
+                </div>
+                <div class="imageee hardh-image">
+                  <a href="https://hardhat.org" target="_blank"><img src="/Img/HardHat-removebg-preview.png" alt="HardHat"></a>
+            </div>
+              </div>
+              </li>
+  
+              <li style="--i:3;">
+                <div class="content-buble">
+                  <div class="info">
+                     <p class="hidding">Ganache CLI</p>
+                  </div>
+                  <div class="imageee ganache-image">
+                    <a href="https://www.npmjs.com/package/ganache-cli" target="_blank"><img src="/Img/Ganache-removebg-preview.png" alt="Ganache CLI"></a>
+              </div>
+                </div>
+                </li>
+  
+                <li style="--i:4;">
+                  <div class="content-buble">
+              <div class="info">
+                 <p class="hidding">Web3.js</p>
+              </div>
+              <div class="imageee">
+                <a href="https://web3js.readthedocs.io/en/v1.5.2/" target="_blank"><img src="/Img/web3-removebg-preview.png" alt="Web3.js"></a>
           </div>
-          <div class="swiper-slide">
-            <h1><span>Blockchain</span> <i class="fas fa-database"></i></h1>
-            <p>Keys</p>
-            <p>Addresses</p>
-            <p>Wallets</p>
-            <p>Transactions</p>
-            <p>PoW,PoS</p>
-            <p>Mining</p>
-          </div>
-         
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination" style="--swiper-theme-color: #764ba2;"></div>
+            </div>
+                  </li>
+  
+                  <li style="--i:5;">
+                    <div class="content-buble">
+                      <div class="info">
+                         <p class="hidding">Metamask</p>
+                      </div>
+                      <div class="imageee meta-image">
+                        <a href="https://metamask.io" target="_blank"><img src="/Img/Metamask-removebg-preview.png" alt="Metamask"></a>
+                  </div>
+                    </div>
+                    </li>
+  
+                    <li style="--i:6;">
+                      <div class="content-buble">
+                        <div class="info">
+                           <p class="hidding">Moralis</p>
+                        </div>
+                        <div class="imageee">
+                          <a href="https://moralis.io" target="_blank"><img src="/Img/Moralis-removebg-preview (1).png" alt="Moralis"></a>
+                    </div>
+                      </div>
+                      </li>
+  
+                      <li style="--i:7;">
+                        <div class="content-buble">
+                          <div class="info">
+                             <p class="hidding">Solidty</p>
+                          </div>
+                          <div class="imageee">
+                            <a href="https://docs.soliditylang.org/en/v0.8.11/" target="_blank"><img src="/Img/Solidty.svg" alt="Solidty"></a>
+                      </div>
+                        </div>
+                       </li>
+  
       </div>
+    </div>
+    
+    <div class="content-card-skill">
+<h2>Ethereum</h2>
+<p>As a Blockchain developer, over the years I have been learning different technologies that span the world of Web 3.0</p>
+<div class="image-skill">
+  <img src="/Img/Matcha.png" alt="Matcha">
+</div>
+    </div>
+  </div>
+
+  <div class="card-skill" data-aos="fade-down" data-aos-duration="2050">
+    <div class="bubble-skill">
+
+      <div class="menu">
+        <div class="toggle toggle-development"><i class="fas fa-file-code"></i></div>
+  
+          <li style="--i:1;">
+  
+            <div class="content-buble">
+              <div class="info">
+                 <p class="hidding">Truffle</p>
+              </div>
+              <div class="imageee">
+            <a href="https://trufflesuite.com" target="_blank"><img src="/Img/Truffle-removebg-preview.png" alt="Truffle"></a>
+          </div>
+            </div>
+    </li>
+  
+            <li style="--i:2;">
+              <div class="content-buble">
+                <div class="info">
+                   <p class="hidding">HardHat</p>
+                </div>
+                <div class="imageee hardh-image">
+                  <a href="https://hardhat.org" target="_blank"><img src="/Img/HardHat-removebg-preview.png" alt="HardHat"></a>
+            </div>
+              </div>
+              </li>
+  
+              <li style="--i:3;">
+                <div class="content-buble">
+                  <div class="info">
+                     <p class="hidding">Ganache CLI</p>
+                  </div>
+                  <div class="imageee ganache-image">
+                    <a href="https://www.npmjs.com/package/ganache-cli" target="_blank"><img src="/Img/Ganache-removebg-preview.png" alt="Ganache CLI"></a>
+              </div>
+                </div>
+                </li>
+  
+                <li style="--i:4;">
+                  <div class="content-buble">
+              <div class="info">
+                 <p class="hidding">Web3.js</p>
+              </div>
+              <div class="imageee">
+                <a href="https://web3js.readthedocs.io/en/v1.5.2/" target="_blank"><img src="/Img/web3-removebg-preview.png" alt="Web3.js"></a>
+          </div>
+            </div>
+                  </li>
+  
+                  <li style="--i:5;">
+                    <div class="content-buble">
+                      <div class="info">
+                         <p class="hidding">Metamask</p>
+                      </div>
+                      <div class="imageee meta-image">
+                        <a href="https://metamask.io" target="_blank"><img src="/Img/Metamask-removebg-preview.png" alt="Metamask"></a>
+                  </div>
+                    </div>
+                    </li>
+  
+                    <li style="--i:6;">
+                      <div class="content-buble">
+                        <div class="info">
+                           <p class="hidding">Moralis</p>
+                        </div>
+                        <div class="imageee">
+                          <a href="https://moralis.io" target="_blank"><img src="/Img/Moralis-removebg-preview (1).png" alt="Moralis"></a>
+                    </div>
+                      </div>
+                      </li>
+  
+                      <li style="--i:7;">
+                        <div class="content-buble">
+                          <div class="info">
+                             <p class="hidding">Solidty</p>
+                          </div>
+                          <div class="imageee">
+                            <a href="https://docs.soliditylang.org/en/v0.8.11/" target="_blank"><img src="/Img/Solidty.svg" alt="Solidty"></a>
+                      </div>
+                        </div>
+                       </li>
+  
+      </div>
+    </div>
+
+    <div class="content-card-skill">
+      <h2>Development</h2>
+<p>As a Blockchain developer, over the years I have been learning different technologies that span the world of Web 3.0</p>
+<div class="image-skill development-img">
+  <img src="/Img/Development.png" alt="Development">
+</div>
+    </div>
+  </div>
+
+  <div class="card-skill" data-aos="fade-left" data-aos-duration="2200">
+    <div class="bubble-skill">
+
+      <div class="menu">
+        <div class="toggle toggle-blockchain"><i class="fas fa-th"></i></div>
+  
+          <li style="--i:1;">
+  
+            <div class="content-buble">
+              <div class="info">
+                 <p class="hidding">Truffle</p>
+              </div>
+              <div class="imageee">
+            <a href="https://trufflesuite.com" target="_blank"><img src="/Img/Truffle-removebg-preview.png" alt="Truffle"></a>
+          </div>
+            </div>
+    </li>
+  
+            <li style="--i:2;">
+              <div class="content-buble">
+                <div class="info">
+                   <p class="hidding">HardHat</p>
+                </div>
+                <div class="imageee hardh-image">
+                  <a href="https://hardhat.org" target="_blank"><img src="/Img/HardHat-removebg-preview.png" alt="HardHat"></a>
+            </div>
+              </div>
+              </li>
+  
+              <li style="--i:3;">
+                <div class="content-buble">
+                  <div class="info">
+                     <p class="hidding">Ganache CLI</p>
+                  </div>
+                  <div class="imageee ganache-image">
+                    <a href="https://www.npmjs.com/package/ganache-cli" target="_blank"><img src="/Img/Ganache-removebg-preview.png" alt="Ganache CLI"></a>
+              </div>
+                </div>
+                </li>
+  
+                <li style="--i:4;">
+                  <div class="content-buble">
+              <div class="info">
+                 <p class="hidding">Web3.js</p>
+              </div>
+              <div class="imageee">
+                <a href="https://web3js.readthedocs.io/en/v1.5.2/" target="_blank"><img src="/Img/web3-removebg-preview.png" alt="Web3.js"></a>
+          </div>
+            </div>
+                  </li>
+  
+                  <li style="--i:5;">
+                    <div class="content-buble">
+                      <div class="info">
+                         <p class="hidding">Metamask</p>
+                      </div>
+                      <div class="imageee meta-image">
+                        <a href="https://metamask.io" target="_blank"><img src="/Img/Metamask-removebg-preview.png" alt="Metamask"></a>
+                  </div>
+                    </div>
+                    </li>
+  
+                    <li style="--i:6;">
+                      <div class="content-buble">
+                        <div class="info">
+                           <p class="hidding">Moralis</p>
+                        </div>
+                        <div class="imageee">
+                          <a href="https://moralis.io" target="_blank"><img src="/Img/Moralis-removebg-preview (1).png" alt="Moralis"></a>
+                    </div>
+                      </div>
+                      </li>
+  
+                      <li style="--i:7;">
+                        <div class="content-buble">
+                          <div class="info">
+                             <p class="hidding">Solidty</p>
+                          </div>
+                          <div class="imageee">
+                            <a href="https://docs.soliditylang.org/en/v0.8.11/" target="_blank"><img src="/Img/Solidty.svg" alt="Solidty"></a>
+                      </div>
+                        </div>
+                       </li>
+  
+      </div>
+    </div>
+    <div class="content-card-skill">
+      <h2>Blockchain</h2>
+<p>As a Blockchain developer, over the years I have been learning different technologies that span the world of Web 3.0</p>
+<div class="image-skill blockchain-img">
+  <img src="/Img/Blockchain-removebg-preview.png" alt="Blockchain">
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+ 
+
     </section>
 
+    
 
     <!-- Contact  -->
 
 
     <section class="contact-form">
-      <svg viewBox="0 0 6950 600">
-        <text x="50%" y="90%" fill="transparent" text-anchor="middle">
-          Contact
-        </text>
-      </svg>
+      <h1 class="heading"><span>Contact</span></h1>
       <div class="container">
         <div class="content">
           <div class="image-box">
@@ -390,9 +628,7 @@
             <button class="button" type="submit"><i class="fas fa-caret-right"></i></button>
           </form>
           <div class="social-media">
-            <i class="fab fa-whatsapp"></i>
-            <i class="fab fa-discord"></i>
-            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
             <i class="fab fa-instagram"></i>
           </div>
         </div>
@@ -402,7 +638,13 @@
     </footer>
 
 
+    <!-- <section class="chart-section">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </section>
 
+    <script>
+     
+    </script> -->
 
 
 

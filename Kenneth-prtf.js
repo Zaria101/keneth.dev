@@ -2,7 +2,7 @@ AOS.init();
 
 
 $(document).ready(function(){
-  formatSvgTitles ()
+ 
   $('.fa-bars').click(function(){
     $(this).toggleClass('fa-times');
     $('.navbar').toggleClass('nav-toggle');
@@ -68,33 +68,22 @@ scrollBtn.addEventListener('click' , () => {
 
 
 
-// Swiper JS
+
+// Skillset
 
 
+let toggle = document.querySelector('.toggle');
+let menu = document.querySelector('.menu');
+let info = document.querySelectorAll('.info p')
+let content = document.querySelectorAll('.content-card-skill h2,p')
+toggle.onclick = function () {
+  menu.classList.toggle('active')
+  
 
-    var swiper = new Swiper('.swiper', {
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-       // Autoplay
-  autoplay: {
-    delay: 6500,
-  },
-    });
+  for(var i = 0; i < info.length; i++) info[i].classList.toggle('hidding');
 
-
-    // Svg
-
-   
-
-    function formatSvgTitles () {
-     
-let profileText = document.querySelectorAll("svg text");
-for(var i = 0; i < profileText.length; i++){
-  profileText[i].setAttribute("x","50%");
-}
-
-
+//   setTimeout(function() {
+// for(var i = 0; i < content.length; i++) content[i].classList.toggle('hidding');
+//   },200)
+  
 }
