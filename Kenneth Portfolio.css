@@ -23,6 +23,8 @@
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* width: fit-content; */
 }
 
 body{
@@ -458,127 +460,56 @@ button:hover{
 
 /* Proyects-sections */
 
- .box-container{
-  margin-top: 50px;
+.features .box-container{
   display: flex;
   align-items: center;
   justify-content: center;
   /* flex-wrap: wrap; */
-  gap: 2.5rem;
-  
-  
 }
 
-
-.proyects-sections .box-container .single-container {
+.features .box-container .box{
+  flex:1 1 30rem;
+  background:#fff;
+  border-radius: .5rem;
+  border:.1rem solid rgba(0,0,0,.2);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  margin:1.5rem;
+  padding:3rem 2rem;
   border-radius: 10px;
-  box-shadow: 0 .2rem .5rem rgba(0,0,0,.6);
-  padding: 10px 10px;
-  
+  text-align: center;
+  transition: .2s linear;
 }
 
-.proyects-sections .box-container  .box-shadow:hover {
-  
+.features .box-container .box:hover {
   transform: translateY(-20px);
-     box-shadow: 0 10px 40px rgba(0,0,0,.4);
+     box-shadow: 0 10px 10px rgba(0,0,0,.3);
      transition: 0.6s;
-     border-radius: 10px;
 
 }
 
-.proyects-sections .box-container  .card1 {
-  background: url(./Img/good-wave.svg) no-repeat;
-  background-size: cover;
+.features .box-container .kitty {
+  background: url(/Img/good-wave.svg) no-repeat;
   background-position: center;
-  padding: 3rem 2rem;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow:0 .2rem .5rem rgba(0,0,0,.6);
-  transition: .2s;
-}
-
-
-
-.proyects-sections .box-container  .box-shadow  .card1 h3 {
-  font-size: 2.4rem;
-}
-
-.proyects-sections .box-container .card1 p {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 1rem 0;
-  font-weight: 600;
-}
-
-.proyects-sections .box-container  .card2 {
-  background: url(./Img/good-wave2.svg) no-repeat;
   background-size: cover;
+}
+
+.features .box-container .multi {
+  background: url(/Img/good-wave2.svg) no-repeat;
   background-position: center;
-  padding: 6rem 2rem;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow:0 .2rem .5rem rgba(0,0,0,.6);
-  transition: .2s;
-}
-
-.proyects-sections .box-container  .card2 h3 {
-  font-size: 2.6rem;
-  margin-top: -32px;
-}
-
-.proyects-sections .box-container .card2 p {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 1rem 0;
-  font-weight: 600;
-}
-
-.proyects-sections .box-container  .card3 {
-  background: url(./Img/good-wave3.svg) no-repeat;
   background-size: cover;
+}
+
+.features .box-container .betting {
+  background: url(/Img/good-wave3.svg) no-repeat;
   background-position: center;
-  padding: 7.8rem 2rem;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow:0 .2rem .5rem rgba(0,0,0,.6);
-  transition: .2s;
+  background-size: cover;
 }
 
-.proyects-sections .box-container  .box-shadow  .card3 h3 {
-  font-size: 2.2rem;
-  margin-top: -43px;
-}
-
-
-.proyects-sections .box-container  .card3 p {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 1rem 0;
-  font-weight: 600;
-}
-
-.box-proyect {
-  width: 100%;
-}
-
-.proyects-sections .box-container .box-proyect .btn {
-  /* font-size:2rem; */
-  padding: 3px;
-}
-
-.proyects-sections .box-container .box-proyect img {
-  margin-top: 37px;
-  width: 105%;
+.features .box-container .box img{
+  height: 18rem;
+  width: 51%;
   transform: translateY(0px);
   animation: float 6s ease-in-out infinite;
- 
-}
-
-.proyects-sections .box-container .box-proyect .kittie-img {
-  width:64%;
-  transform: translateY(0px);
-  animation: float 6s ease-in-out infinite;
-  
 }
 
 @keyframes float {
@@ -593,28 +524,19 @@ button:hover{
   }
 }
 
-.proyects-sections .box-container .box-proyect .betting-dice{
-  width: 70%;
-  transform: translateY(0px);
-  animation: float 6s ease-in-out infinite;
+
+.features .box-container .box h3{
+  font-size: 2rem;
+  color:#333;
+  padding-top: 1rem;
 }
 
-.proyects-sections .box-container .box-proyect .multisig-wallet{
-  width:65%;
-  transform: translateY(0px);
-  animation: float 6s ease-in-out infinite;
+.features .box-container .box p{
+  font-size: 1.3rem;
+  color:rgb(0, 0, 0);
+  padding: 1rem 0;
+  font-weight: 500;
 }
-
-
-
-.box-container .box img {
-  width: 30%;
-}
-
-
-
-
-
 
 
 
@@ -649,8 +571,9 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 40px;
+  
 }
+
 
 .card-skill {
   position: relative;
@@ -1378,7 +1301,7 @@ footer .row .col .underline .animation {
   
 }
 
-.proyects-sections .box-container .single-container .box-shadow  .card3 h3 {
+.proyects-sections .box-container .single-container .box-proyect  .card3 h3 {
   font-size: 1.6rem;
 }
 
@@ -1407,7 +1330,7 @@ footer .row .col .underline .animation {
   transition: .2s;
 }
 
-.proyects-sections .box-container .single-container .box-shadow  .card1 h3 {
+.proyects-sections .box-container .single-container .box-proyect  .card1 h3 {
   font-size: 1.9rem;
 }
   }
