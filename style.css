@@ -733,7 +733,7 @@ span {
 }
 
 .content-card-skill .image-skill img {
-  width: 64%;
+  width: 47%;
 }
 
 .content-card-skill .image-skill img:hover {
@@ -789,7 +789,7 @@ span {
 }
 
 .menu li .content-buble {
-  background-color: #fff;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #fcfcfc 100%);
   width: 35%;
   height: 30%;
   align-items: center;
@@ -798,10 +798,15 @@ span {
   align-items: center; */
   border-radius: 60%;
   transform: rotate(calc(360deg / -8 * var(--i)));
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.20);
   color: #111;
   transition: 0.5s;
   text-align: center;
+  max-width: 200px;
+}
+
+.menu li .content-buble:hover {
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.30);
 }
 
 
@@ -817,7 +822,7 @@ span {
 
 
 .menu .imageee img {
-  width: 60%;
+  width: 80%;
 }
 
 .menu .meta-image {
@@ -851,13 +856,11 @@ span {
   box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
   font-size: 2em;
   transition: transform 1.25s;
-  background: url(./Img/Bubble.gif) no-repeat;
-  background-position: center;
+  background-image: linear-gradient(135deg, #30205D 0%, #6F68D5 100%);
 }
 
 .menu .toggle-development {
-  background: url(/Img/Second-bubble.gif) no-repeat;
-  background-position: center;
+  background-image: linear-gradient(135deg, #574686 0%, #ACA3BA 100%);
 }
 
 .menu .toggle-development .fa-file-code {
@@ -865,8 +868,7 @@ span {
 }
 
 .menu .toggle-blockchain {
-  background: url(/Img/Third-bubble.gif) no-repeat;
-  background-position: center;
+  background-image: linear-gradient(135deg, #7C78D0 0%, #C4BEE3 100%);
 }
 
 .menu .toggle-blockchain .fa-th {
@@ -880,6 +882,7 @@ span {
 .toggle .fa-ethereum {
   font-size: 40px;
 }
+
 
 
 
